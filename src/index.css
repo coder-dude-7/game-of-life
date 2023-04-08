@@ -1,13 +1,107 @@
-body {
+/*body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+}*/
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  margin: 0 auto;
+  background: #77878B;
+  color: #77878B;
+}
+
+.gridHolder {
+  /*position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);*/
+  width: 95%;
+  height: 85%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  background: #77878B;
+  border: thick #373E40 inset;
+}
+/*.gridHolder:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}*/
+.box {
+  color: white;
+  font-size: 200%;
+  /*border: lightgrey thin solid;*/
+}
+
+#one {
+  background-color: #373E40;
+  border: thin outset #488286;
+}
+#zero {
+  background-color: #B7D5D4;
+}
+#zero:hover {
+  background-color: #373E40;
+}
+.page {
+  display: flex;
+  flex-flow: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  background-color: #77878B;
+}
+.controls {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  padding-top: 10px;
+  background-color: #77878B;
+  padding-left: 20px;
+  column-gap: 20px;
+}
+.button {
+  width: 100px;
+  height: 100px;
+  color: red;
+  background-color: white;
+  border: thin black solid;
+}
+
+.playButton {
+  background-color: transparent;
+  box-sizing: border-box;
+  width: 74px;
+  height: 74px;
+  border-width: 37px 0px 37px 74px;
+  border-color: transparent transparent transparent lightgreen;
+
+}
+.pauseButton {
+  width: 74px;
+  height: 74px;
+  border-style: double;
+  border-width: 0px 0px 0px 37px;
+  border-color: orangered;
+  background-color: transparent;
+}
+.resetButton {
+  border-radius: 25px;
+  width: 100px;
+  height: 50px;
+  background: white;
+}
+

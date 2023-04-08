@@ -1,0 +1,13 @@
+# Issues
+- Need to intialise board size using grideSize variable/state
+- Need to add onClick functionality to cells. Adding to string using createGrid() doesn't seem to work 
+- Issues with resizing (cellSize/boardSize goes out of sync maybe)
+
+-makeNewBoard(), createGrid(), countNeighbours() take the most time and therfore slow program the most
+
+# Stuff to do
+- want to control live cells by clicking etc.
+- add ability to click on cell to add object
+- make grid square
+- change slider colours
+- allow rotation of objects, i.e. gliders 
